@@ -158,7 +158,7 @@ const Manager = () => {
 
                                         <td className='w-[25%] md:px-5 md:py-4 px-1 py-2'>
                                             <div className='flex items-center md:gap-3'>
-                                                <span>{item.password}</span>
+                                                <span>{"*".repeat(item.password.length)}</span>
                                                 <img src={copysvg} className='cursor-pointer w-5 md:block hidden' onClick={() => { copyText(item.password) }} />
                                             </div>
                                         </td>
